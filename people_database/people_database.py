@@ -34,25 +34,3 @@ class PeopleDatabase:
     def count_all_from_state(self, state):
         new_list = [x for x in self.people if x.state == state]
         return len(new_list)
-
-
-# database = PeopleDatabase(Person("jon", "liss", "j@email", "CO"))
-# database.add("notjon", "notliss", "notme@email", "PA")
-# database.add("drew", "thompson", "bike@email", "IN")
-# database.add("jon", "bernesser", "sloop@email", "NY")
-# database.add("fakefirst", "fakelast", "fake@email", "PA")
-
-# print database.return_all_emails()
-
-# print database.return_all_by_state("CO")
-
-# database.remove_by_email("j@email")
-#
-# print database.return_all_emails()
-
-# print database.count_all_from_state("PA")
-
-
-
-# for i in database.people:
-#     print i.first_name
