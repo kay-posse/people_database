@@ -1,12 +1,12 @@
 from person import Person
 
 class PeopleDatabase:
-    def __init__(self, x):
+    def __init__(self, person_data):
         self.people = []
-        if type(x) == list:
-            self.people = x
+        if type(person_data) == list:
+            self.people = person_data
         else:
-            self.people.append(x)
+            self.people.append(person_data)
 
     def add(self, first, last, em, st):
         person = Person(first, last, em, st)
