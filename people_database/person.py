@@ -5,15 +5,18 @@ class Person:
         self.email = em
         self.state = st
 
-    def first_name():
+    def first_name(self):
         return self.first_name
 
 
-    def last_name():
+    def last_name(self):
         return self.last_name
 
-    def email():
+    def email(self):
         return self.email
 
-    def state():
+    def states(self):
         return self.state
+
+    def info(self):
+        return [self.first_name, self.last_name, self.email, self.state]

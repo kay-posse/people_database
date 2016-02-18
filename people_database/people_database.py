@@ -3,7 +3,10 @@ from person import Person
 class PeopleDatabase:
     def __init__(self, x):
         self.people = []
-        self.people.append(x)
+        if type(x) == list:
+            self.people = x
+        else:
+            self.people.append(x)
 
     def add(self, first, last, em, st):
         person = Person(first, last, em, st)
@@ -23,9 +26,9 @@ class PeopleDatabase:
         new_list = []
         for i in self.people:
             if i.state == state:
-                new_list.append(i.first_name)
+                new_list.append(i.info())
 
-        return ", ".join(new_list)
+        return new_list
 
 
     def remove_by_email(self, email):
