@@ -22,7 +22,8 @@ class PeopleDatabase
   end
 end
 
-a = PeopleDatabase.new([Person.new(first_name: "jim", last_name: "jones", email: "@gmail", state: "CO")])
+a = PeopleDatabase.new([Person.new(first_name: "Jim", last_name: "jones", email: "jim@gmail", state: "CO")])
 
-a.add(first_name: "jim", last_name: "jones", email: "@gmail", state: "CO")
-puts a.people.first.first_name 
+a.add(first_name: "Frank", last_name: "Lee", email: "frank@gmail", state: "TN")
+a.add(first_name: "Martha", last_name: "Lee", email: "martha@gmail", state: "AK")
+puts a.people.first.first_name
