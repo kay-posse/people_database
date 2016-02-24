@@ -8,7 +8,6 @@ class Person
     @state = person_data[:state]
   end
 end
-<<<<<<< HEAD
 
 class PeopleDatabase
   attr_reader :people
@@ -28,5 +27,3 @@ a = PeopleDatabase.new([Person.new(first_name: "Jim", last_name: "jones", email:
 a.add(first_name: "Frank", last_name: "Lee", email: "frank@gmail", state: "TN")
 a.add(first_name: "Martha", last_name: "Lee", email: "martha@gmail", state: "AK")
 puts a.people.first.first_name
-=======
->>>>>>> fbd08970c56e918f78e1ee0ba5a6f90bb654f4e7
